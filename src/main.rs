@@ -6,6 +6,7 @@ mod handler;
 mod history;
 mod server;
 mod upstream;
+mod web_ui;
 
 use anyhow::Result;
 use clap::Parser;
@@ -96,6 +97,7 @@ async fn main() -> Result<()> {
     ));
 
     // API state
+    let config_path = std::fs::canonicalize(&cli.config).unwrap_or_else(|_| cli.config.clone());
     let api_state = Arc::new(api::AppState {
         handler: dns_handler.clone(),
         cache: dns_cache,
@@ -103,6 +105,7 @@ async fn main() -> Result<()> {
         china_upstream,
         global_upstream,
         start_time: std::time::Instant::now(),
+        config_path,
     });
 
     // Start servers
