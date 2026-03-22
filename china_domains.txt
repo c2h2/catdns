@@ -1,0 +1,49 @@
+# China domain list (subset for testing)
+# Format: one domain per line, suffix matching
+# Lines starting with # are comments
+
+# Major Chinese sites
+baidu.com
+qq.com
+taobao.com
+tmall.com
+jd.com
+163.com
+126.com
+sina.com
+sohu.com
+weibo.com
+zhihu.com
+bilibili.com
+douyin.com
+toutiao.com
+alipay.com
+aliyun.com
+aliyuncs.com
+tencent.com
+weixin.qq.com
+wechat.com
+douban.com
+youku.com
+iqiyi.com
+csdn.net
+jianshu.com
+huawei.com
+xiaomi.com
+oppo.com
+vivo.com
+meizu.com
+bytedance.com
+kuaishou.com
+pinduoduo.com
+meituan.com
+dianping.com
+ctrip.com
+360.cn
+sogou.com
+suning.com
+cnblogs.com
+oschina.net
+
+# China TLD
+cn
